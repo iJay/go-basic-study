@@ -27,4 +27,7 @@ func main () {
 
 	var h string
 	fmt.Println(h) // the zero-valued for string is empty ""
+
+	var i bool
+	fmt.Println(i) // the zero-valued for bool is false
 }
