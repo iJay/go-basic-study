@@ -22,13 +22,13 @@ func main () {
 		break
 	}
 
-	for i := range 10 {
-		if i <= 8 {
-			fmt.Println(i)
-		} else {
-			return
-		}
-	}
+	// for i := range 10 {
+	// 	if i <= 8 {
+	// 		fmt.Println(i)
+	// 	} else {
+	// 		return // 这里return之后 甚至不会在执行下面的for循环了
+	// 	}
+	// }
 
 	for n:= range 6 {
 		if n%2 == 0 {

@@ -24,6 +24,7 @@ func main () {
 	}
 
 	t := time.Now()
+	// fmt.Println(t.(type)) // invalid syntax tree: use of .(type) outside type switch
 	switch { // without an expression is an alternate way to express if/else logic
 	case t.Hour() < 12:
 		fmt.Println("It's before noon")
@@ -32,7 +33,7 @@ func main () {
 	}
 
 	whatAmI := func(i interface{}) {
-		switch t := i.(type) {
+		switch t := i.(type) { // i.(type) 它唯一合法的出现位置，就是 switch 语句的头部
 		case bool:
 			fmt.Println("I'm a bool")
 		case int: 
